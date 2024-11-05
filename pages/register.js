@@ -10,9 +10,9 @@ const Register = () => {
     return (
         <View style={loginStyle.container}>
             <View style={{...loginStyle.section,...loginStyle.reglogoBox}}>
-                <Avatar.Image style={{ backgroundColor: 'transparent', borderWidth: 2}}source={require("../assets/avatar.png")}size={70}/>
-                <Text variant='displayMedium' style={{marginTop: 10, color: 'black'}}>Registration</Text>
-                <Text variant='headlineMedium' style={{marginTop: 10, color: 'black'}}>Basta App</Text>
+                <Avatar.Image style={{ backgroundColor: 'transparent', borderWidth: 2}}source={require("../assets/avatar.png")}size={100}/>
+                <Text variant='displayMedium' style={{marginTop: 10, color: 'black'}}>My App</Text>
+                <Text variant='headlineMedium' style={{marginTop: 10, color: 'black'}}>Register</Text>
             </View>
             <View style={loginStyle.section}>
             <TextInput
@@ -50,7 +50,7 @@ const Register = () => {
             />
             </View>
             <View style={loginStyle.section}> 
-                <Button style={{...loginStyle.buttonBox, width: 300}} icon="account-check" mode="contained-tonal" onPress={() => console.log('REGISTER')}>Register</Button>
+                <Button style={{...loginStyle.buttonBox, width: 300, backgroundColor: '#FF6961'}} icon="account-check" mode="contained-tonal" onPress={() => console.log('REGISTER')}>Register</Button>
             </View>
             
         </View>

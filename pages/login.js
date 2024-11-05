@@ -10,8 +10,8 @@ const Login = () => {
     return (
         <View style={loginStyle.container}>
             <View style={{...loginStyle.section,...loginStyle.logoBox}}>
-                <Avatar.Image style={{ backgroundColor: 'transparent', borderWidth: 2}}source={require("../assets/avatar.png")}size={100}/>
-                <Text variant='headlineLarge' style={{marginTop: 10, color: 'black'}}>Basta App</Text>
+                <Avatar.Image style={{ backgroundColor: 'transparent'}}source={require("../assets/avatar.png")}size={100}/>
+                <Text variant='headlineLarge' style={{marginTop: 10, color: 'black'}}>My App</Text>
             </View>
             <View style={loginStyle.section}>
             <TextInput
@@ -24,7 +24,7 @@ const Login = () => {
                 left={<TextInput.Icon icon="email"/>}
             />
             <TextInput
-                style ={{...loginStyle.inputBox}}
+                style ={{...loginStyle.inputBox, marginBottom: 20}}
                 textContentType='password'
                 label="Password"
                 value={password}
@@ -37,9 +37,9 @@ const Login = () => {
             />
             </View>
             <View style={loginStyle.section}> 
-                <Button style={{...loginStyle.buttonBox, width: 300}} icon="login" mode="contained-tonal" onPress={() => console.log('LOGIN')}>Login</Button>
-                <Button style={{...loginStyle.buttonBox, marginTop: 0, width: 300}}  mode="text" onPress={() => console.log('REGISTER')}>Don't have an account yet?</Button>
-                <Button style={{...loginStyle.buttonBox, marginTop: 0, width: 300}}  mode="text" onPress={() => console.log('BOBOKA')}>Forgot Password</Button>
+                <Button style={{...loginStyle.buttonBox, width: 300, backgroundColor: '#FF6961'}} icon="login" mode="contained-tonal" onPress={() => console.log('LOGIN')}>Login</Button>
+                <Button style={{...loginStyle.buttonBox, marginTop: 0, width: 300}}  textColor="#FF6961" mode="text" onPress={() => console.log('REGISTER')}>Don't have an account yet?</Button>
+                <Button style={{...loginStyle.buttonBox, marginTop: 0, width: 300}}  textColor="#FF6961" mode="text" onPress={() => console.log('PASS RESET')}>Forgot Password</Button>
             </View>
             
         </View>

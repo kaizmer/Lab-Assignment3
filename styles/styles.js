@@ -1,7 +1,6 @@
-import { StyleSheet } from "react-native";
-import { shadow } from "react-native-paper";
 const styles = {
     container:{
+        backgroundColor: '#dbdbdb',
         flex: 1,
         height: '100%',
         justifyContent: 'center',
@@ -9,7 +8,6 @@ const styles = {
 
     },
     section:{
-        borderWidth: 0,
         flex: 1,
         width: '100%',
     },
@@ -30,8 +28,9 @@ const styles = {
     buttonBox:{
         height: 50,
         justifyContent: 'center',
-        marginLeft: 60,
+        marginLeft: 50,
         marginTop: 50,
+        
     }
 }
 
